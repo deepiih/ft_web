@@ -1,0 +1,20 @@
+# Specify analysis options for all packages
+
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude: [packages/google_fonts/generator/fonts.pb.dart]
+
+linter:
+  rules:
+    avoid_print: false
+    avoid_void_async: true
+    cancel_subscriptions: true
+    close_sinks: true
+    constant_identifier_names: true
+    directives_ordering: true
+    package_api_docs: true
+    prefer_single_quotes: true
+    test_types_in_equals: true
+    throw_in_finally: true
+    unnecessary_statements: true
